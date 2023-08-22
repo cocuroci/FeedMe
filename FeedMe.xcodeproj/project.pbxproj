@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6511A7F52A95370800A3EF17 /* FeedMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6511A7F42A95370800A3EF17 /* FeedMeApp.swift */; };
-		6511A7F72A95370800A3EF17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6511A7F62A95370800A3EF17 /* ContentView.swift */; };
+		6511A7F72A95370800A3EF17 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6511A7F62A95370800A3EF17 /* HomeView.swift */; };
 		6511A7F92A95370B00A3EF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6511A7F82A95370B00A3EF17 /* Assets.xcassets */; };
 		6511A7FC2A95370B00A3EF17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6511A7FB2A95370B00A3EF17 /* Preview Assets.xcassets */; };
 		6511A8062A95370B00A3EF17 /* FeedMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6511A8052A95370B00A3EF17 /* FeedMeTests.swift */; };
@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		6511A7F12A95370800A3EF17 /* FeedMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6511A7F42A95370800A3EF17 /* FeedMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMeApp.swift; sourceTree = "<group>"; };
-		6511A7F62A95370800A3EF17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6511A7F62A95370800A3EF17 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6511A7F82A95370B00A3EF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6511A7FB2A95370B00A3EF17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6511A8012A95370B00A3EF17 /* FeedMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				6511A7F42A95370800A3EF17 /* FeedMeApp.swift */,
-				6511A7F62A95370800A3EF17 /* ContentView.swift */,
+				6511A7F62A95370800A3EF17 /* HomeView.swift */,
 				6511A7F82A95370B00A3EF17 /* Assets.xcassets */,
 				6511A7FA2A95370B00A3EF17 /* Preview Content */,
 			);
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6511A7F72A95370800A3EF17 /* ContentView.swift in Sources */,
+				6511A7F72A95370800A3EF17 /* HomeView.swift in Sources */,
 				6511A7F52A95370800A3EF17 /* FeedMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
