@@ -9,6 +9,15 @@ let project = Project(
             platform: .iOS,
             product: .app,
             bundleId: "br.com.andrecocuroci.FeedMe",
+            infoPlist: .extendingDefault(with: [
+                "UIMainStoryboardFile": "",
+                "UILaunchScreen": [
+                    "UILaunchScreen": [:]
+                ],
+                "UIApplicationSceneManifest": [
+                    "UIApplicationSupportsMultipleScenes": true
+                ]
+            ]),
             sources: ["FeedMe/Sources/**"],
             resources: ["FeedMe/Resources/**"]
         ),
@@ -17,7 +26,9 @@ let project = Project(
             platform: .iOS,
             product: .unitTests,
             bundleId: "br.com.andrecocuroci.FeedMe.tests",
-            sources: ["FeedMeTests/**"]
+            infoPlist: .default,
+            sources: ["FeedMeTests/**"],
+            dependencies: [.target(name: "FeedMe")]
         )
     ]
 )
