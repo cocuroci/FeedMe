@@ -19,7 +19,10 @@ let project = Project(
                 ]
             ]),
             sources: ["FeedMe/Sources/**"],
-            resources: ["FeedMe/Resources/**"]
+            resources: ["FeedMe/Resources/**"],
+            dependencies: [
+                .external(name: "ComposableArchitecture")
+            ]
         ),
         .init(
             name: "FeedMeTests",
