@@ -9,7 +9,8 @@ let project = Project(
             platform: .iOS,
             product: .app,
             bundleId: "br.com.andrecocuroci.FeedMe",
-            sources: ["FeedMe/**"]
+            sources: ["FeedMe/Sources/**"],
+            resources: ["FeedMe/Resources/**"]
         ),
         .init(
             name: "FeedMeTests",
