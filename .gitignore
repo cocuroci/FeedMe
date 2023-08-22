@@ -2,7 +2,11 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-.DS_Store
+# Xcode generated files
+*.DS_Store
+*.xcodeproj
+*.xcworkspace
+FeedMe.xcodeproj/project.pbxproj
 
 ## Build generated
 build/
@@ -68,3 +72,6 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+Derived/
+Tuist/Dependencies/*
