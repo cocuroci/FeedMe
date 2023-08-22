@@ -1,17 +1,16 @@
-//
-//  FeedMeApp.swift
-//  FeedMe
-//
-//  Created by Andre on 22/08/23.
-//
-
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct FeedMeApp: App {
+    static let store = Store(initialState: RandomRecipeFeature.State()) {
+        RandomRecipeFeature()
+            ._printChanges()
+    }
+
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            RandomRecipeView(store: Self.store)
         }
     }
 }
