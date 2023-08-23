@@ -40,6 +40,9 @@ struct RandomRecipeView: View {
                 }
             }
             .ignoresSafeArea(edges: .all)
+            .sheet(store: self.store.scope(state: \.$detailState, action: { .detailState($0)})) { store in
+                DetailRecipeView(store: store)
+            }
         }
     }
 }
