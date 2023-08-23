@@ -20,7 +20,7 @@ extension RandomRecipeClient: DependencyKey {
 extension RandomRecipeClient: TestDependencyKey {
     static var testValue: RandomRecipeClient {
         RandomRecipeClient {
-            .init(meals: [.init(id: "1")])
+            .init(meals: [.mock])
         }
     }
 }
