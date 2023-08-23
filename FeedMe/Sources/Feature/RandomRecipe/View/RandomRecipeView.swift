@@ -14,8 +14,14 @@ struct RandomRecipeView: View {
                 }
                 .disabled(viewStore.isLoading)
                 .buttonStyle(.borderedProminent)
+
+                if !viewStore.messageError.isEmpty {
+                    Text(viewStore.messageError)
+                        .font(.caption)
+                        .foregroundColor(.red)
+                }
+
             }
-            .padding()
             .frame(maxWidth: .infinity)
             .frame(maxHeight: .infinity)
             .overlay {
