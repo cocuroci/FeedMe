@@ -12,7 +12,7 @@ import ComposableArchitecture
 @testable import FeedMe
 
 @MainActor
-final class RandoRecipeFeatureTests: XCTestCase {
+final class RandomRecipeFeatureTests: XCTestCase {
     func testFetchRandomFeed() async {
         let store = TestStore(initialState: RandomRecipeFeature.State()) {
             RandomRecipeFeature()
