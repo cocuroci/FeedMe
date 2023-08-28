@@ -1,5 +1,6 @@
 import SwiftUI
 import ComposableArchitecture
+import XCTestDynamicOverlay
 
 @main
 struct FeedMeApp: App {
@@ -10,7 +11,9 @@ struct FeedMeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RandomRecipeView(store: Self.store)
+            if !_XCTIsTesting {
+                RandomRecipeView(store: Self.store)
+            }
         }
     }
 }

@@ -22,9 +22,15 @@ final class RandoRecipeFeatureTests: XCTestCase {
             $0.isLoading = true
         }
 
-        await store.receive(.randomFeedResponse(.init(meals: [.init(id: "1")]))) {
+        await store.receive(.randomFeedResponse(.init(meals: [.mock]))) {
             $0.isLoading = false
-            $0.result = .init(meals: [.init(id: "1")])
+            $0.result = .init(meals: [.mock])
+            $0.detailState = .init(meal: .mock)
+        }
+
+        await store.send(.detailState(.presented(.close)))
+        await store.receive(.detailState(.dismiss)) {
+            $0.detailState = nil
         }
     }
 
