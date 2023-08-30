@@ -1,4 +1,4 @@
-.PHONY : swiftgen setup_ci setup_sonar install_dependencies install_tuist pods kill_xcode clean provisioning clean_provisionings test run ipa project ci_project new_module template list 
+.PHONY : install_dependencies install_tuist tuist_fetch tuist_generate project ci_project open_workspace
 
 NOCOLOR=\033[0m
 RED=\033[1;31m
